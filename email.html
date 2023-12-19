@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up - Your Brand</title>
+    <title>Email Messaging Service</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
+         
                  background: linear-gradient(to bottom, #87CEEB, #4682B4);
             color: #333;
         }
@@ -69,42 +70,13 @@
             margin-bottom: 20px;
         }
 
-        .signup-form {
+        .service-feature {
             background-color: #fff;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: left;
-            max-width: 400px;
-            margin: auto;
-        }
-
-        .form-group {
             margin-bottom: 20px;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-
-        .form-group input {
-            width: 100%;
-            padding: 10px;
-            box-sizing: border-box;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        .form-group input[type="submit"] {
-            background-color: #e8491d;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 4px;
-            font-size: 16px;
         }
 
         footer {
@@ -123,38 +95,67 @@
     <header>
         <div class="container">
             <div id="branding">
-                <h1><span class="highlight"><a href="#">Event Management Services</a></span></h1>
+                <h1><span class="highlight"><a href="#">Email Services</a></span></h1>
             </div>
             <nav>
                 <a href="index.html">Home</a>
-                <a href="">Features</a>
+                <a href="#">Features</a>
                 <a href="contact.html">Contact</a>
+                <a href="register.html">Register</a>
+
             </nav>
         </div>
     </header>
 
     <div class="container">
         <main>
-            <h1>Sign Up</h1>
-            <div class="signup-form">
-                <form action="process_signup.php" method="post">
-                    <div class="form-group">
-                        <label for="name">Your Name:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Your Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Choose Password:</label>
-                        <input type="password" id="password" name="password" required>
-                    </div>
-                    <div class="form-group">
-                        <input onclick="index.html" type="submit" value="Sign Up">
-                    </div>
-                </form>
+            <h1>Email Messaging Service Features</h1>
+
+            <!-- Bulk Email Sending -->
+            <div class="service-feature">
+                <h2>Bulk Email Sending</h2>
+                <p>
+                    Allow users to upload a CSV file containing email addresses and provide a simple interface
+                    to compose and send messages to all emails in the CSV file.
+                </p>
             </div>
+
+            <!-- Scheduled Messaging -->
+            <div class="service-feature">
+                <h2>Scheduled Messaging</h2>
+                <p>
+                    Implement a scheduling feature that allows users to specify the date and time for the messages to be
+                    sent.
+                </p>
+            </div>
+
+            <!-- Email Filtering -->
+            <div class="service-feature">
+                <h2>Email Filtering</h2>
+                <p>
+                    Allow users to filter specific emails based on criteria (e.g., demographics, preferences)
+                    before sending messages.
+                </p>
+            </div>
+
+            <!-- Personalization -->
+            <div class="service-feature">
+                <h2>Personalization</h2>
+                <p>
+                    Include options for personalizing messages with user-specific details (e.g., first name, user
+                    preferences).
+                </p>
+            </div>
+
+            <!-- Analytics -->
+            <div class="service-feature">
+                <h2>Analytics</h2>
+                <p>
+                    Provide insights into the email campaign, such as open rates, click-through rates, and delivery
+                    status.
+                </p>
+            </div>
+
         </main>
     </div>
 
