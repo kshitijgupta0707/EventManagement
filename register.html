@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenZ QR Generator &#128640;</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #87CEEB, #4682B4);
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background-color: black;
+            color: #fff;
+            padding: 20px 0;
+            border-bottom: #ddd 4px solid;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        header a:hover {
+            color: #e8491d;
+        }
+
+        header #branding {
+            float: left;
+        }
+
+        header #branding h1 {
+            margin: 0;
+        }
+
+        header #branding h1 a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 28px;
+        }
+
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        main {
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        section {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        section h1 {
+            color: #333;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="checkbox"] {
+            margin-top: 0;
+        }
+
+        input[type="submit"] {
+            background-color: #e8491d;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        input[type="file"] {
+            margin-top: 5px;
+        }
+
+        aside {
+            flex-basis: 30%;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            padding: 20px 0;
+            background: linear-gradient(to top, #333, #555);
+            color: #fff;
+            text-align: center;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+
+            header #branding,
+            header nav,
+            header nav li,
+            header #branding h1,
+            header nav ul {
+                float: none;
+                text-align: center;
+                width: 100%;
+            }
+
+            header {
+                text-align: center;
+            }
+
+            header h1 span,
+            header a {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+
+            main {
+                flex-direction: column;
+            }
+
+            section,
+            aside {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight"><a href="#">GenZ QR Generator &#128640;</a></span></h1>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <main>
+
+            <section>
+                <h1>Event Registration</h1>
+                <p>Enter your information below to register for the event.</p>
+
+                <!-- Registration Form -->
+                <form action="process_registration.php" method="post" enctype="multipart/form-data">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="whatsapp_phone">WhatsApp Phone Number:</label>
+                    <input type="tel" id="whatsapp_phone" name="whatsapp_phone">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="payment_screenshot">Payment Screenshot (max size 2MB):</label>
+                    <input type="file" id="payment_screenshot" name="payment_screenshot" accept="image/*">
+
+                    <input type="submit" value="Register">
+                </form>
+            </section>
+
+            <aside>
+                <!-- Add additional information or features here -->
+                <p>Additional Information:</p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Consectetur adipiscing elit.</li>
+                    <li>Nulla vehicula felis ac velit fermentum, nec facilisis felis rhoncus.</li>
+                </ul>
+            </aside>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Your Ticketing Site. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
